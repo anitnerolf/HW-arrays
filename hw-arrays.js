@@ -208,12 +208,116 @@
 
 // print("Hello, my name is Florentina.");
 
+//Detyra4
+
+let classrooms = [
+    {
+        name: 'Biokimi',
+        numberOfSeats: 15,
+        faculty: 'FSHMN'
+    },
+    {
+        name: 'Analitike',
+        numberOfSeats: 18,
+        faculty: 'Heimerer'
+    },
+    {
+        name: 'Ekonomiks',
+        numberOfSeats: 17,
+        faculty: 'Ekonomik'
+    },
+    {
+        name: 'Mekatronike',
+        numberOfSeats: 20,
+        faculty: 'FIEK'
+    },
+    {
+        name: '411',
+        numberOfSeats: 12,
+        faculty: 'FIEK'
+    }
+];
 
 
+function displayClassrooms() {
+    for (let i = 0; i < classrooms.length; i++) {
+        console.log(classrooms[i]);
+    }
+}
+
+//displayClassrooms();
+
+function displayFacultyClassrooms(item) {
+    for (let i = 0; i < classrooms.length; i++) {
+        if (classrooms[i].faculty == item) {
+            console.log(classrooms[i]);
+        }
+    }    
+}
+
+//displayFacultyClassrooms('FIEK');
+
+function findSpecificClassroom(item) {
+    let result = [];
+    for (let i = 0; i < classrooms.length; i++) {
+        if (classrooms[i].faculty == item) {
+            result.push(i);
+        }
+    }
+    return(result);
+}
+
+function displayFacultyGroup(group) {
+    for (let i = 0; i < group.length; i++) {
+        let res = findSpecificClassroom(group[i].faculty);
+        if (res != null) {
+            for (let j = 0; j < res.length; j++) {
+                if (group[i].numberOfStudents <= classrooms[res[j]].numberOfSeats) {
+                    console.log(classrooms[res[j]]);
+                }
+            }
+        }
+    }
+}
+
+let group = [
+    {
+        name: 'IT',
+        numberOfStudents: 14,
+        faculty: 'FIEK'
+    }
+]
+
+//displayFacultyGroup(group);
+
+function sortBySeats(arr) {
+    let newArr = arr.sort((a, b) => {
+    if (a.numberOfSeats < b.numberOfSeats)  {
+        return -1;
+    } else if (a.numberOfSeats > b.numberOfSeats)  {
+        return 1;
+    }
+    return 0;
+    });
+    console.log(newArr);
+}
+
+//sortBySeats(classrooms);
 
 
+function sortByName(arr) {
+    let newArr = arr.sort((a, b) => {
+    if (a.name < b.name)  {
+        return -1;
+    } else if (a.name > b.name)  {
+        return 1;
+    }
+    return 0;
+    });
+    console.log(newArr);
+}
 
-
+//sortByName(classrooms);
 
 
 
