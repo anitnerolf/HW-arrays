@@ -114,24 +114,69 @@ let shopReceipt = [
 ];
 
 
-function printReceipt() {
-    for (let i = 0; i < shopReceipt.length; i++) {
-        document.write("<ul><uli>Product Name: " + shopReceipt[i].name + "<br>Amount: " + shopReceipt[i].amount + "<br>PricePerItem: " + shopReceipt[i].pricePerItem + "</uli></ul>");
-        console.log(shopReceipt[i]);
-    }    
-}
+// function printReceipt() {
+//     for (let i = 0; i < shopReceipt.length; i++) {
+//         document.write("<ul><uli>Product Name: " + shopReceipt[i].name + "<br>Amount: " + shopReceipt[i].amount + "<br>PricePerItem: " + shopReceipt[i].pricePerItem + "</uli></ul>");
+//         console.log(shopReceipt[i]);
+//     }    
+// }
 
-//printReceipt();
-function countSumOfPurchase() {
-    let sum = 0;
-    for (let i = 0; i < shopReceipt.length; i++) {
-        sum += (parseFloat(shopReceipt[i].pricePerItem) * parseFloat(shopReceipt[i].amount));
-    }
-    return (sum.toFixed(2));
-}
+// //printReceipt();
+// function countSumOfPurchase() {
+//     let sum = 0;
+//     for (let i = 0; i < shopReceipt.length; i++) {
+//         sum += (parseFloat(shopReceipt[i].pricePerItem) * parseFloat(shopReceipt[i].amount));
+//     }
+//     return (sum.toFixed(2));
+// }
 
-let sum = countSumOfPurchase();
-console.log(sum);
+//let sum = countSumOfPurchase();
+//console.log(sum);
+
+// function findMostExpensive() {
+//     let max = shopReceipt[0].pricePerItem;
+//     for (let i = 0; i < shopReceipt.length; i++) {
+//         if (shopReceipt[i].pricePerItem > max) {
+//             max = shopReceipt[i].pricePerItem;
+//         }
+//     }
+//     return (max);
+// }
+
+// function getMostExpensiveItem(item) {
+//     let result = null;
+//     for (let i = 0; i < shopReceipt.length; i++) {
+//         if (shopReceipt[i].pricePerItem == item) {
+//             result = shopReceipt[i];
+//         }
+//     }
+//     return(result);
+// }
+
+// let mostExpensive = findMostExpensive();
+// let item = getMostExpensiveItem(mostExpensive);
+// console.log(item);
+
+// function countSumOfPurchase() {
+//     let sum = 0;
+//     for (let i = 0; i < shopReceipt.length; i++) {
+//         sum += (parseFloat(shopReceipt[i].pricePerItem) * parseFloat(shopReceipt[i].amount));
+//     }
+//     return (sum.toFixed(2));
+// }
+
+// function countAveragePrice() {
+//     let average = 0;
+//     let sum = countSumOfPurchase();
+//     average = sum / shopReceipt.length;
+//     return(average);
+// }
+
+// let average = countAveragePrice();
+// console.log(average);
+
+//Detyra3
+
 
 
 
