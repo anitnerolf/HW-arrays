@@ -85,33 +85,33 @@
 
 //Detyra2
 
-let shopReceipt = [
-    {
-        name: 'Milk',
-        amount: 10,
-        pricePerItem: 1
-    },
-    {
-        name: 'Bread',
-        amount: 5,
-        pricePerItem: 0.5
-    },
-    {
-        name: 'Chocolate',
-        amount: 8,
-        pricePerItem: 1.2
-    },
-    {
-        name: 'Tomatoe',
-        amount: 6,
-        pricePerItem: 0.3
-    },
-    {
-        name: 'Potatoe',
-        amount: 20,
-        pricePerItem: 0.2
-    }
-];
+// let shopReceipt = [
+//     {
+//         name: 'Milk',
+//         amount: 10,
+//         pricePerItem: 1
+//     },
+//     {
+//         name: 'Bread',
+//         amount: 5,
+//         pricePerItem: 0.5
+//     },
+//     {
+//         name: 'Chocolate',
+//         amount: 8,
+//         pricePerItem: 1.2
+//     },
+//     {
+//         name: 'Tomatoe',
+//         amount: 6,
+//         pricePerItem: 0.3
+//     },
+//     {
+//         name: 'Potatoe',
+//         amount: 20,
+//         pricePerItem: 0.2
+//     }
+// ];
 
 
 // function printReceipt() {
@@ -177,9 +177,36 @@ let shopReceipt = [
 
 //Detyra3
 
+// let cssStyles = [
+//     {
+//         name: 'color',
+//         value: 'red'
+//     },
+//     {
+//         name: 'font-size',
+//         value: '50px'
+//     },
+//     {
+//         name: 'text-decoration',
+//         value: 'underline'
+//     },
+//     {
+//         name: 'text-align',
+//         value: 'center'
+//     },
+//     {
+//         name: 'font-family',
+//         value: 'verdana'
+//     }
+// ];
 
+// function print(text) {
+//     for (let i = 0; i < cssStyles.length; i++) {
+//         document.write("<p style=\"" + cssStyles[i].name + ":" + cssStyles[i].value + "\">" + text + "</p>");
+//     }
+// }
 
-
+// print("Hello, my name is Florentina.");
 
 
 
